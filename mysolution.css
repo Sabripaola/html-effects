@@ -25,10 +25,10 @@
   transition:1s;
 }
 .ex-5-square:hover{
-  transform:scale(2, 2);
+  transform:scale(2);
 }
 .ex-5-square:active{
-  transform:scale(.5, .5);
+  transform:scale(.5);
 }
 /* esercizo 6 */
 .ex-6-img:hover{
@@ -44,9 +44,151 @@
     filter:none;
   }
   50%{
-     filter:grayscale(1) sepia(10);
+     filter:grayscale(1) sepia(.8);
   }
   100%{
       filter:grayscale(1);
+  }
+}
+/* esercizio 8 */
+.ex-8-img{
+  transition:3s;
+}
+.ex-8-img:hover{
+  filter:saturate(.2) sepia(.8);
+  border-radius:20px;
+}
+/* esercizio 9 */
+.ex-9-img{
+  transition:2s;
+}
+.ex-9-img:hover{
+  filter:saturate(.1) sepia(.8);
+  border-radius:20px;
+  transform:scale(1.5);
+}
+/* esercizio 10 */
+.ex-10-icon{
+  animation:rotazione 1s linear infinite;
+}
+@keyframes rotazione{
+  0%{
+    transform:rotate(0);
+  }
+  100%{
+      transform:rotate(1turn);
+  }
+}
+/* esercizio 11 */
+.ex-11-icon:hover{
+  animation:orario 2s linear;
+}
+@keyframes orario{
+  0%{
+    transform:rotate(0);
+  }
+  10%{
+     transform:rotate(35deg);
+  }
+  20%{
+     transform:rotate(70deg);
+  }
+  30%{
+     transform:rotate(105deg);
+  }
+  40%{
+     transform:rotate(140deg);
+  }
+  50%{
+     transform:rotate(175deg);
+  }
+  60%{
+     transform:rotate(210deg);
+  }
+  70%{
+     transform:rotate(245deg);
+  }
+  80%{
+     transform:rotate(280deg);
+  }
+  90%{
+     transform:rotate(315deg);
+  }
+  100%{
+      transform:rotate(0);
+  }
+}
+/* esercizio 12 */
+.ex-12-button:hover .ex-12-top-white{
+  animation:test 2s linear;
+}
+@keyframes test{
+  0%{
+    left:10%;
+  }
+  50%{
+     left:calc(100% - 60px);
+  }
+  100%{
+      left:10%;
+  }
+}
+/* esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+  animation:girocompleto 2s linear;
+}
+@keyframes girocompleto{
+  0%{
+    left:10%;
+    top:-10px;
+  }
+  30%{
+     left:calc(100% - 30px);
+     top:-10px;
+  }
+  45%{
+      left:calc(100% - 30px);
+      top:100%;
+  }
+  75%{
+     left:0;
+     top:100%;
+  }
+  90%{
+     left:-15px;
+     top:-10px;
+  }
+  100%{
+      left:10%;
+      top:-10px;
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white{
+  animation:girocompleto 2s linear;
+}
+@keyframes girocompleto{
+  0%{
+     bottom:-10px;
+     right:20%;
+  }
+  30%{
+     right:calc(100% - 30px);
+     bottom:-10px;
+  }
+  45%{
+      right:calc(100% - 30px);
+      bottom:100%;
+  }
+  75%{
+      right:0;
+      bottom:100%;
+  }
+  90%{
+      right:-15px;
+      bottom:-10px;
+  }
+  100%{
+      bottom:-10px;
+      right:20%;
   }
 }
